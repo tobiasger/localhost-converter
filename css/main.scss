@@ -1,0 +1,27 @@
+body,
+html {
+    font-family: "Helvetica";
+    margin: 0;
+    padding: 0;
+}
+
+#inner {
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    cursor:default;
+}
+
+input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
