@@ -42,6 +42,6 @@ $("button").click(function() {
     });
 });
 
-$(".after").click(function(){
-  $("input").val('');
+$(".clear").click(function(){
+  $("input").val('').focus();
 });
