@@ -1,10 +1,11 @@
 @import "_colors";
+@import "_animations";
 @import url( 'https://fonts.googleapis.com/css?family=Roboto');
 
 body,
 html {
     font-family: "Roboto";
-    background: $background-color;
+    background: $backgroundColor;
     margin: 0;
     padding: 0;
     font-size: 12pt;
@@ -13,7 +14,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
 
     * {
-        color: #bbb;
+        color: $textColor;
     }
 }
 
@@ -34,11 +35,11 @@ h1 {
     -o-user-select: none;
     cursor: default;
     text-transform: uppercase;
-    color: $offblack;
+    color: $headingColor;
 }
 
 .block-full {
-    background: $background-color;
+    background: $backgroundColor;
     width: 100%;
     text-align: center;
     height: auto;
@@ -64,30 +65,32 @@ input {
     resize: none;
     height: 50px;
     line-height: $textareaHeight;
-    background: lighten($background-color, 10);
+    background: lighten($backgroundColor, 10);
     text-overflow: ellipsis;
 }
 
 button {
-    background-color: $background-color;
+    background-color: $backgroundColor;
     padding: 0;
     height: 48px;
     font-weight: 400;
     font-size: 1rem;
     position: absolute;
     bottom: 0;
+    color:$headingColor;
 
     &:active {
-        background-color: lighten($background-color, 10);
+        background-color: lighten($backgroundColor, 10);
     }
 }
 
 .clear {
     position: absolute;
-    right: 10px;
-    top: 0;
-    height: 100%;
-    width: 50px;
+    border-radius:100px;
+    right: 6px;
+    top: 6px;
+    height: 20px;
+    width: 20px;
     cursor: default;
     user-select: none;
     -moz-user-select: none;
@@ -97,10 +100,16 @@ button {
     background-image: url("../assets/clear.svg");
     background-size: 10px 10px;
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center center;
     opacity: 0.4;
+
+    &:hover {
+      opacity:0.6;
+    }
 
     &:active {
         opacity: 1;
+        fill:black!important;
+        background-color:white;
     }
 }
