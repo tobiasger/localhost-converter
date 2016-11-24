@@ -1,6 +1,5 @@
+@import "_colors";
 @import url( 'https://fonts.googleapis.com/css?family=Roboto');
-$background-color: #D3D3D3;
-$offblack: #151515;
 
 body,
 html {
@@ -14,7 +13,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
 
     * {
-        color: grey;
+        color: #bbb;
     }
 }
 
@@ -35,7 +34,7 @@ h1 {
     -o-user-select: none;
     cursor: default;
     text-transform: uppercase;
-    color:$offblack;
+    color: $offblack;
 }
 
 .block-full {
@@ -45,7 +44,7 @@ h1 {
     height: auto;
     box-sizing: border-box;
     padding: 10px 0;
-    border-bottom:1px solid #bbb;
+    border-bottom: 1px solid #bbb;
     position: relative;
 }
 
@@ -67,7 +66,6 @@ input {
     line-height: $textareaHeight;
     background: lighten($background-color, 10);
     text-overflow: ellipsis;
-
 }
 
 button {
@@ -80,29 +78,29 @@ button {
     bottom: 0;
 
     &:active {
-      background-color:lighten($background-color, 10);
+        background-color: lighten($background-color, 10);
     }
 }
 
 .clear {
-  position: absolute;
-  right:10px;
-  top:0;
-  height:100%;
-  width:50px;
-  cursor:default;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
-  background-image: url(../assets/clear.svg);
-  background-size: 10px 10px;
-  background-repeat:no-repeat;
-  background-position: center right;
-  opacity:0.4;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    background-image: url("../assets/clear.svg");
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    opacity: 0.4;
 
-  &:active {
-    opacity:1;
-  }
+    &:active {
+        opacity: 1;
+    }
 }
