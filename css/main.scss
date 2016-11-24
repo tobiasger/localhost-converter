@@ -39,7 +39,7 @@ h1 {
 }
 
 .block-full {
-    background: $backgroundColor;
+    background: lighten($backgroundColor, 10);
     width: 100%;
     text-align: center;
     height: auto;
@@ -65,12 +65,12 @@ input {
     resize: none;
     height: 50px;
     line-height: $textareaHeight;
-    background: lighten($backgroundColor, 10);
+    background: white;
     text-overflow: ellipsis;
 }
 
 button {
-    background-color: $backgroundColor;
+    background-color: lighten($backgroundColor, 10);
     padding: 0;
     height: 48px;
     font-weight: 400;
@@ -105,11 +105,12 @@ button {
 
     &:hover {
       opacity:0.6;
+      background-color:white;
     }
 
     &:active {
         opacity: 1;
         fill:black!important;
-        background-color:white;
+        background-color:transparent;
     }
 }
