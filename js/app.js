@@ -41,3 +41,7 @@ $("button").click(function() {
 
     });
 });
+
+$(".after").click(function(){
+  $("input").val('');
+});
