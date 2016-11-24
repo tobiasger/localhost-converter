@@ -21,6 +21,11 @@ function getLocalIPAddress(success) {
 
 //Clicking button
 $("button").click(function() {
+    $("input").addClass("flash");
+
+    setTimeout( function(){
+        $("input").removeClass("flash");
+    }, 1000);
 
     var $textArea = $("input");
 
