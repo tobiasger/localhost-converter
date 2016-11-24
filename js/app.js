@@ -21,14 +21,16 @@ function getLocalIPAddress(success) {
 
 //Clicking button
 $("button").click(function() {
+    //Flash effect on input
     $("input").addClass("flash");
-
     setTimeout( function(){
         $("input").removeClass("flash");
     }, 1000);
 
-    var $textArea = $("input");
+    //Darker text on converted input
+    $("input").addClass("new");
 
+    var $textArea = $("input");
     //Entered texts value
     var oldText = $textArea.val();
 
@@ -47,6 +49,12 @@ $("button").click(function() {
     });
 });
 
+//Remove "new" class when changing input field
+$("input").on("change paste keyup", function(){
+  $(this).removeClass("new");
+});
+
+//Clear input field when clicking on "clear" class
 $(".clear").click(function(){
   $("input").val('').focus();
 });
