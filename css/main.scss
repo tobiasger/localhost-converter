@@ -1,5 +1,6 @@
 @import url( 'https://fonts.googleapis.com/css?family=Roboto');
 $background-color: #D3D3D3;
+$offblack: #151515;
 
 body,
 html {
@@ -34,7 +35,7 @@ h1 {
     -o-user-select: none;
     cursor: default;
     text-transform: uppercase;
-    color:#151515;
+    color:$offblack;
 }
 
 .block-full {
@@ -83,11 +84,25 @@ button {
     }
 }
 
-.after {
+.clear {
   position: absolute;
-  right:0;
+  right:10px;
   top:0;
   height:100%;
-  width:30px;
+  width:50px;
+  cursor:default;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  background-image: url(../assets/clear.svg);
+  background-size: 10px 10px;
+  background-repeat:no-repeat;
+  background-position: center right;
+  opacity:0.4;
 
+  &:active {
+    opacity:1;
+  }
 }
