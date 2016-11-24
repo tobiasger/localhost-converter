@@ -67,12 +67,6 @@ input {
     background: lighten($background-color, 10);
     text-overflow: ellipsis;
 
-    & .after {
-      height:100%;
-      width:30px;
-      background-color:red;
-      float:right;
-    }
 }
 
 button {
@@ -87,17 +81,6 @@ button {
     &:active {
       background-color:lighten($background-color, 10);
     }
-}
-
-.enter {
-  background: white;
-  transition:all 0.5s ease;
-  color:darken(#C9ABF7, 10);
-
-  &:hover {
-    transition:background 0.15s ease;
-    background:white;
-  }
 }
 
 .after {
