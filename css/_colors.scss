@@ -3,6 +3,9 @@ $backgroundColor: #D3D3D3;
 $headingColor: #151515;
 $textColor: grey;
 
-//EFFECTS
-$flashColor: #5698B6;
-$newTextColor: #5698B6;
+//##EFFECTS##
+//SUCCESS
+$flashColor: #ffea83;
+$newTextColor: $headingColor;
+
+//ERROR
