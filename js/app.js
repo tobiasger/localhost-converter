@@ -78,5 +78,6 @@ $("input").on("click", function() {
 
 //Clear input field when clicking on "clear" class
 $(".quit").click(function() {
-
+  const app = require('electron').remote.app
+  app.quit()
 });
