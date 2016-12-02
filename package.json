@@ -1,6 +1,7 @@
 {
-  "name": "hej",
-  "version": "1.0.0",
+  "name": "localhost-converter",
+  "productName": "Localhost Converter",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {

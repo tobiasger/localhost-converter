@@ -16,7 +16,7 @@ app.on('ready', () => {
   tray = new Tray(icon)
 
   // Remove dock icon on launch
-  // app.dock.hide()
+  app.dock.hide()
 
   // Add a click handler so that when the user clicks on the menubar icon, it shows
   // our popup window
