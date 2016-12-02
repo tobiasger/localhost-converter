@@ -3,4 +3,11 @@
 
 Simple desktop app (made with Electron) for converting localhost adresses to shareable adresses in local network.
 ##Why?
-This is a project for me to learn some [Node.js](https://nodejs.org/en/), [Electron](http://electron.atom.io), JavaScript and the basics of handling a GitHub repository. The app might be very unnecessary.
+This is a project for me to learn some [Node.js](https://nodejs.org/en/), [Electron](http://electron.atom.io), JavaScript and the basics of handling a GitHub repository. The app might be very unnecessary, but is somewhat necessary for me.
+##How?
+The app is a menubar app developed for myself. When using local server environments (with [MAMP](http://www.mamp.info) for example) the adress to the folders of the server is usually structured with the _localhost_ hostname. Working on different locations and being in need of sharing local website projects with my colleagues (on the same network), I wanted to create this app so that I easily could replace web adresses containing _localhost_ with my current local IP adress.
+###The app works like this
+1. Copy localhost adress from web browser.
+2. Paste localhost adress into app.
+3. Click "Convert".
+4. The adress gets copied automatically to clipboard with _localhost_ replaced with your current local IP adress.
