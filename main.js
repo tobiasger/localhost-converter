@@ -3,8 +3,10 @@ const path = require('path')
 
 const assetsDir = path.join(__dirname, 'assets')
 
+
 let tray = undefined
 let window = undefined
+
 
 // This method is called once Electron is ready to run our code
 // It is effectively the main method of our Electron app
