@@ -15,6 +15,9 @@ app.on('ready', () => {
   let icon = nativeImage.createFromDataURL(base64Icon)
   tray = new Tray(icon)
 
+  // Remove dock icon on launch
+  // app.dock.hide()
+
   // Add a click handler so that when the user clicks on the menubar icon, it shows
   // our popup window
   tray.on('click', function(event) {
