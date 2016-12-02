@@ -77,6 +77,7 @@ $("input").on("click", function() {
 });
 
 //Clear input field when clicking on "clear" class
-$(".clear").click(function() {
-    $("input").val('').focus();
+$(".quit").click(function() {
+  const app = require('electron').remote.app
+  app.quit()
 });
