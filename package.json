@@ -7,7 +7,7 @@
   "scripts": {
     "start": "electron main.js",
     "build": "electron-packager --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --out=build --version=1.4.10 --ignore=dist . LocalhostConverter",
-    "dmg": "electron-installer-dmg ./builds/LocalhostConverter-darwin-x64/*.app LocalhostConverter --overwrite --out=release"
+    "dmg": "electron-installer-dmg ./build/LocalhostConverter-darwin-x64/*.app LocalhostConverter --overwrite --out=release"
   },
   "author": "Tobias Gerhardsson",
   "license": "MIT",
