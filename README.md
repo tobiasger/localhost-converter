@@ -15,4 +15,4 @@ The app is a menubar app developed for myself. When using local server environme
 ![localhost-converter](http://www.tobiasgerhardsson.com/localhostconverter.gif)
 
 ##Thanks
-@shama, @crilleengvall, furbel, alling & santi.
+[shama](https://github.com/shama), [crilleengvall](https://github.com/crilleengvall), [furbel](http://www.sweclockers.com/medlem/furbel), [alling](http://www.sweclockers.com/medlem/alling) & [santi](http://stackoverflow.com/users/2026606/santi) for your help.
