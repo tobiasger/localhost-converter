@@ -1,5 +1,5 @@
 # localhost-converter
-![localhost-converter](assets/AppIcon.iconset/icon_512x512@2x.png)
+![localhost-converter](assets/AppIcon.iconset/icon_128x128@2x.png)
 
 Simple desktop app (made with Electron) for converting localhost adresses to shareable adresses in local network.
 ##Why?
