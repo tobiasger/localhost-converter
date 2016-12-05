@@ -16,9 +16,6 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    * {
-        color: $textColor;
-    }
 }
 
 h1 {
@@ -69,12 +66,16 @@ input {
     "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
+    color:rgba(255, 255, 255, 0.5);
+
+    &::-webkit-input-placeholder {
+      color:rgba(255, 255, 255, 0.5);
+    }
 
     &:focus {
       transition:background 0.25s ease, color 0.25s ease;
-      background:white;
-      mix-blend-mode:multiply;
-      color:black;
+      color:white;
+      background: darken($backgroundColor, 10);
     }
 }
 
