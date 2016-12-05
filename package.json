@@ -14,5 +14,8 @@
   "devDependencies": {
     "electron-installer-dmg": "^0.1.2",
     "electron-packager": "^8.3.0"
+  },
+  "dependencies": {
+    "electron-default-menu": "^1.0.0"
   }
 }

@@ -1,16 +1,17 @@
-const {app, BrowserWindow, ipcMain, Tray, nativeImage} = require('electron')
+const {Menu, app, BrowserWindow, ipcMain, Tray, nativeImage, shell} = require('electron')
 const path = require('path')
-
+const defaultMenu = require('electron-default-menu')
 const assetsDir = path.join(__dirname, 'assets')
-
 
 let tray = undefined
 let window = undefined
 
-
 // This method is called once Electron is ready to run our code
 // It is effectively the main method of our Electron app
 app.on('ready', () => {
+  const menu = defaultMenu(app, shell);
+  Menu.setApplicationMenu(Menu.buildFromTemplate(menu));
+
   // Setup the menubar with an icon
   let icon = nativeImage.createFromDataURL(base64Icon)
   tray = new Tray(icon)
@@ -36,6 +37,7 @@ app.on('ready', () => {
     show: false,
     frame: false,
     resizable: false,
+    transparent: true,
     icon: path.join(__dirname, 'assets/icons/png/64x64.png')
   })
 
