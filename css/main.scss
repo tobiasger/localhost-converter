@@ -21,7 +21,7 @@ html {
 h1 {
     font-size: 0.8rem;
     font-weight: 500;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
     margin: 0;
     padding: 0;
     user-select: none;
@@ -59,7 +59,7 @@ input {
     resize: none;
     height: 50px;
     line-height: $textareaHeight;
-    background: darken($backgroundColor, 4);
+    background: darken($backgroundColor, 10);
     text-overflow: ellipsis;
     position:relative;
     font-family: -apple-system, BlinkMacSystemFont,
@@ -74,8 +74,7 @@ input {
 
     &:focus {
       transition:background 0.25s ease, color 0.25s ease;
-      color:white;
-      background: darken($backgroundColor, 10);
+      background: darken($backgroundColor, 14);
     }
 }
 
@@ -90,7 +89,7 @@ button {
     color:$headingColor;
 
     &:active {
-        background-color: black;
+        background-color: darken($backgroundColor, 4);
     }
 }
 

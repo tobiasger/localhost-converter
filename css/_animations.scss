@@ -21,25 +21,19 @@
 }
 
 @-webkit-keyframes flash {
-    0% { background-color: $flashColor;}
-    100% { background-color: none; }
+    0% { background-color: grey;}
+    100% {background-color:none;}
 }
 
 @-moz-keyframes flash {
-    0% { background-color: $flashColor; }
+    0% { background-color: grey; }
     100% { background-color: none; }
 }
 
 @-ms-keyframes flash {
-    0% { background-color: $flashColor; }
+    0% { background-color: grey; }
     100% { background-color: none; }
 }
-
-.new {
-  color:$newTextColor;
-  transition:color .5s ease;
-}
-
 
 @-webkit-keyframes shake {
     0% { transform:translateX(-25px);}
