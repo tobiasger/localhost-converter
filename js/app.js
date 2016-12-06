@@ -38,8 +38,7 @@ $("button").click(function() {
     //If input contains "localhost"
     else {
         console.log("Yes! Input did contain 'localhost'!");
-        //Darker text on converted input
-        $("input").addClass("new");
+
         //Flash effect on input
         $("input").addClass("success");
         setTimeout(function() {
